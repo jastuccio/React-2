@@ -6,9 +6,11 @@ export const Card = styled.div`
   border-radius: 5px;
   padding: 15px;
   color: ${black};
-  ${elevation[4]}
-  ${transition({})}
+  ${elevation[4]};
+  ${transition({
+    property: 'box-shadow'
+  })};
   &:hover {
-    ${elevation[5]}
+    ${elevation[5]};
   }
 `;
